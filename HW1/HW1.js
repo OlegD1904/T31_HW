@@ -1,4 +1,25 @@
 "use strict"
+//! Условие
+// U should create a programm that takes :
+// name
+// yearOfBirth
+// surname
+// Is it love money ?
+
+// as a result : both (users name and surname ) into modal window
+// how old is it , let say :
+// user entred 1973 => 50
+
+// *
+// if isLove -> Welcome , pane !
+// otherwise !isLove -> Sorry , here is a training business,
+//  go away please!
+
+
+const firstName=prompt(`Введите своё имя:`);
+console.log ([`FirstName`], typeof firstName, firstName);
+const lastName=prompt(`Введите свою фамилию`);
+console.log ([`LastName`],typeof lastName, lastName);
 alert(`Здравствуйте`+" "+firstName+" "+lastName);
 console.log(`##############################################################`)
 const userAge=+prompt(`Введите свой год рождения (xxxx):`);
@@ -33,14 +54,4 @@ else{
 
 
 
-// console.log(`##############################################################`);
-// const confQuestion=confirm(`Любите ли вы деньги?`);
-// if(confQuestion===true){
-//     console.log([`confQuestion`], confQuestion);
-//     alert(`Многоуважаемый`+` `+firstName+` `+lastName+`,`+` `+` `+`добро пожаловать на семинар`+`!`);
-
-// }
-// else{
-//     alert(`Извините, желаем вам удачи!`)
-// }
 
