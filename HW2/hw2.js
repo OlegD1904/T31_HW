@@ -1,5 +1,5 @@
 `use strict`
-console.log(`Hallo`)
+
 //! 
 // User validator
 
@@ -30,4 +30,11 @@ console.log(`Hallo`)
     validAge:false,
   }
 
-  
+  while(!validator.validName){
+   let userName=prompt(`Введите ваше имя:`);
+   if(userName.length>2){
+      validator.validName=true;
+      console.log([`userName`, typeof userName, userName]);
+      alert(`Здравствуйте`+` `+userName+` `+`!`)
+   }
+  }
