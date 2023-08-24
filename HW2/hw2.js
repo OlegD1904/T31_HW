@@ -31,7 +31,7 @@
   }
 
   while(!validator.validName){
-   let userName=prompt(`Введите ваше имя:`);
+   var userName=prompt(`Введите ваше имя:`);
    if(userName.length>=2){
       validator.validName=true;
       console.log(`[Name is valid]`, typeof userName, userName);
@@ -44,7 +44,8 @@
    let userEmail=prompt(`Введите свой адрес электронной почты "___@_._"`);
    for(let i=0; i<userEmail.length; i++){
       let validSymbol=userEmail[i];
-      if(validSymbol.includes(`@`)){
+      //!!!!!!!!!!!!!!!!!&& validSymbol.includes(`.`)
+      if(validSymbol.includes(`@`) ){
          validator.validEmail=true;
          console.log([`Name is valid`], typeof userEmail, userEmail);
          alert(`Адрес вашей электронной почты`+` `+ userEmail);
@@ -83,5 +84,21 @@
    }
   }
   console.log(`***************************************************************`)
+
+  while(!validator.validAge){
+   let userAge=+prompt(`Введите ваш возрост:`);
+   if (userAge<18){
+      alert(`Вход только с 18 лет`);
+      console.log([`userAge`], typeof userAge, userAge);
+      break;
+   } else{
+      alert (`Добро пжаловать`+` `+ userName);
+   }
+   break
+  }
+  console.log(`***************************************************************`)
+  
+
+
 
 
